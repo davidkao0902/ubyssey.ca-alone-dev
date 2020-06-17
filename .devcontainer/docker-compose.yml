@@ -26,6 +26,7 @@ services:
       - .:/ubyssey.ca/tmp
     environment:
       DJANGO_ENVIRONMENT_SETTINGS: config.settings.development
+      GOOGLE_APPLICATION_CREDENTIALS=somecredentials
     ports:
       - "8000:8000"
       - "4444:4444"
